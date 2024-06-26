@@ -1,0 +1,26 @@
+<div id="shadow-root">
+  <div id="editor"></div>
+</div>
+
+<div id=content style="display: none">
+<h3>Liquid Tag (Inline block with content)</h3>
+<p>Hello <span type="liquid">user.name</span>!</p>
+<p>This example is also mounted on a Shadow Root.</p>
+</div>
+
+<style>
+  .CodeMirror {
+    border: 1px solid #eee;
+    height: auto;
+  }
+  .CodeMirror pre { white-space: pre !important }
+  [type="liquid"] {
+    display: inline-block;
+    background-color: #e7f1ff;
+    padding: 2px;
+  }
+  [type="liquid"] div {
+    display: inline;
+    padding: 0 2px;
+  }
+</style>
